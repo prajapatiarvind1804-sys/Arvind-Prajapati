@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARVIND | Personal Website</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;color:white;background:radial-gradient(ellipse at 50% 45%,#28313a,#08090c 70%);font-family:Arial,sans-serif;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}.fog{position:fixed;inset:0;background:linear-gradient(120deg,transparent,#aab5c015,transparent);animation:mist 8s infinite alternate ease-in-out;pointer-events:none}main{position:relative;padding:24px}h1{font-size:clamp(3rem,15vw,7rem);margin:0;letter-spacing:8px;color:#f5f1e8;text-shadow:0 3px 0 #777,0 8px 25px #d5e4ff70}p{color:#c3c8d0;letter-spacing:3px}.line{width:90px;height:2px;background:#d4b46a;margin:25px auto}button{padding:12px 20px;border:1px solid #d4b46a;background:transparent;color:white;border-radius:30px;font-size:15px;cursor:pointer}#photo{display:none;max-width:220px;max-height:260px;object-fit:cover;border-radius:15px;margin:25px auto}@keyframes mist{from{transform:translateX(-25px);opacity:.3}to{transform:translateX(25px);opacity:.9}}
+</style>
+</head>
+<body><div class="fog"></div><main><p>WELCOME TO MY WORLD</p><h1>ARVIND</h1><div class="line"></div><p>PERSONAL • CREATIVE • UNIQUE</p><img id="photo" alt="My photo"><br><input id="upload" type="file" accept="image/*" hidden><button onclick="document.getElementById('upload').click()">ADD MY PHOTO</button><p style="font-size:12px;letter-spacing:1px">A cinematic world of my own.</p></main><script>document.getElementById('upload').addEventListener('change',function(e){const file=e.target.files[0];if(file){const photo=document.getElementById('photo');photo.src=URL.createObjectURL(file);photo.style.display='block'}});</script></body></html>
